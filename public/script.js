@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (username === defaultUsername && password === defaultPassword) {
         alert('Login bem-sucedido! Redirecionando...');
-        window.location.href = 'index.html'; // Redireciona para a página inicial
+        window.location.href = 'home.html'; // Redireciona para a página inicial
       } else {
         alert('Nome de usuário ou senha inválidos. Tente novamente.');
       }
