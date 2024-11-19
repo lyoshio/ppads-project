@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="homePage.html"><strong>Journalist Assistant</strong></a>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-content">
+        <div class="login-form">
+          <h1>Entrar</h1>
+          <form id="login-form">
+            <div class="form-group">
+              <label for="username">Nome de Usuário:</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Digite seu nome de usuário"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Senha:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Digite sua senha"
+                required
+              />
+            </div>
+            <button type="submit" class="btn login-button">Entrar</button>
+          </form>
+
+          <!-- Caixa com mensagem de usuário e senha para testes -->
+          <div class="test-credentials">
+            <p><strong>Usuário e senha para testes do sistema:</strong></p>
+            <p><strong>Usuário:</strong> admin</p>
+            <p><strong>Senha:</strong> admin</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-section">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="Sobre.html">Sobre</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Fale Conosco</h4>
+        <ul>
+          <li>Email: exemplo@exemplo.com</li>
+          <li>Telefone: (xx)xxxx-xxxx</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Mídias Sociais</h4>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/RobertaViana/ppads-project-friends"
+              target="_blank"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

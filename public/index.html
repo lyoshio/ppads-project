@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entenda o Caso</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <!-- <img src="../assets/logo- 11Jai.png" alt="Logo" class="logo" /> -->
+    </div>
+
+    <div class="container">
+      <h1 class="titlePage">Entenda o Caso</h1>
+
+      <form id="entenda-caso" action="#">
+        <div class="form-group">
+          <label for="data-publicacao">Data de publicação da notícia:</label>
+          <input
+            type="date"
+            id="data-publicacao"
+            name="data-publicacao"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="descricao-caso"
+            >Descreva o caso em poucas palavras:</label
+          >
+          <textarea
+            id="descricao-caso"
+            name="descricao-caso"
+            rows="5"
+            required
+            placeholder="Inclua informações básicas: o que aconteceu, com quem aconteceu, onde aconteceu, quando aconteceu e por que aconteceu"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="contexto-informacao"
+            >Contexto e informação adicional:</label
+          >
+          <textarea
+            id="contexto-informacao"
+            name="contexto-informacao"
+            rows="10"
+            required
+            placeholder="Informações relevantes podem incluir dados relevantes para a economia brasileira ou algum setor industrial em especifico, apurações adicionais e/ou análises de conjuntura entre outras."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="parte-fonte">Parte/Fonte:</label>
+          <input
+            type="text"
+            id="parte-fonte"
+            name="parte-fonte"
+            required
+            placeholder="Insira a fonta ou parte envolvida..."
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="por-que-entender"
+            >Por que entender o caso em questão importa?</label
+          >
+          <textarea
+            id="por-que-entender"
+            name="por-que-entender"
+            rows="5"
+            required
+            placeholder="Explique de forma sucinta por que o caso é relevante para o leitor"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="link-video"
+            >Deseja incluir um link para um video do Youtube?</label
+          >
+          <input
+            type="url"
+            id="link-video"
+            name="link-video"
+            placeholder="Insira o Link completo ex: https://www.youtube.com/"
+          />
+        </div>
+
+        <button type="submit" class="btn-image">
+          Gerar
+          <img src="../assets/vetor.png" alt="vetorIcon" />
+        </button>
+
+        <h2 class="saida-h2">Saídas geradas:</h2>
+        <div class="saida-container">
+          <div id="saida-gerada" class="saida-gerada"></div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
